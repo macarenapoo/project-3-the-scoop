@@ -1,0 +1,54 @@
+users:
+  test@gmail.com:
+    username: test@gmail.com
+    articleIds:
+      - 1
+      - 2
+    commentIds:
+      - 1
+  macarena@gmail.com:
+    username: macarena@gmail.com
+    articleIds: []
+    commentIds:
+      - 2
+articles:
+  '1':
+    id: 1
+    title: How to build a simple Blog Using Node.js
+    url: >-
+      https://hackernoon.com/how-to-build-a-simple-blog-using-node-js-4ccdce39e78f
+    username: test@gmail.com
+    commentIds:
+      - 1
+      - 2
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '2':
+    id: 2
+    title: Node JS tutorial in VS Code
+    url: 'https://code.visualstudio.com/docs/nodejs/nodejs-tutorial'
+    username: test@gmail.com
+    commentIds: []
+    upvotedBy:
+      - test@gmail.com
+    downvotedBy: []
+nextArticleId: 3
+comments:
+  '1':
+    id: 1
+    body: Great article!! Thanks for sharing.
+    username: test@gmail.com
+    articleId: 1
+    upvotedBy:
+      - test@gmail.com
+      - macarena@gmail.com
+    downvotedBy: []
+  '2':
+    id: 2
+    body: I really enjoyed this one. Thanks!
+    username: macarena@gmail.com
+    articleId: 1
+    upvotedBy: []
+    downvotedBy: []
+nextCommentId: 3
